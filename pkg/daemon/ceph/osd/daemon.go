@@ -173,9 +173,9 @@ func Provision(context *clusterd.Context, agent *OsdAgent, crushLocation, topolo
 
 	// Print dmsetup version
 	err := dmsetupVersion(context)
-	if err != nil {
-		return errors.Wrap(err, "failed to print device mapper version")
-	}
+	//if err != nil {
+	//	return errors.Wrap(err, "failed to print device mapper version")
+	//}
 
 	// set the initial orchestration status
 	status := oposd.OrchestrationStatus{Status: oposd.OrchestrationStatusOrchestrating}
